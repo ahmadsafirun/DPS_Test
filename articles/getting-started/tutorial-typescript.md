@@ -1,3 +1,9 @@
+<properties pageTitle="Bower Tutorial" 
+  description="This is an article on bower tutorial" 
+  services="" 
+  documentationCenter=""
+  authors="bursteg" />
+
 #Using TypeScript in Cordova projects
 [TypeScript](http://www.typescriptlang.org) is a programming language that is a superset of JavaScript - offering classes, modules, and interfaces. You can use these features while developing your Cordova app and TypeScript will compile into simple JavaScript that will be deployed as part of your app.
 
@@ -15,12 +21,12 @@ The Visual Studio Tools for Apache Cordova provide templates to help you get sta
 Visual Studio provides a blank app template using TypeScript. To use it:
 
 1. In Visual Studio, use the File > New > Project... menu.
-2. Select the Templates > TypeScript > Apache Cordova Apps category and click on the Blank App (Apache Cordova) template.![New TypeScript project template](media/ts-project-template.PNG)
+2. Select the Templates > TypeScript > Apache Cordova Apps category and click on the Blank App (Apache Cordova) template.![New TypeScript project template](media/tutorial-typescript/ts-project-template.PNG)
 3.  Enter a name and file location for your project, then click OK.
 
 Here's what the new project looks like:
 
-![Solution folder | Project Folder | Folders: merges, res, scripts, www](media/ts-file-structure.PNG)
+![Solution folder | Project Folder | Folders: merges, res, scripts, www](media/tutorial-typescript/ts-file-structure.PNG)
 
 In the scripts folder you see typings, index.ts, and tsconfig.json files. These files are used by TypeScript:
 * typings - a collection of [typing definition files](http://www.typescriptlang.org/Handbook#writing-dts-files) that define the APIs for common Cordova plugins.
@@ -80,7 +86,7 @@ To customize the compiler settings for TypeScript in your projects:
 
 As you write your tsconfig JSON, IntelliSense will offer suggestions to help make sure your file matches the expected schema.
 
-![Visual Studio IntelliSense with suggestions for the tsconfig schema](media/tsconfig-intellisense.png)
+![Visual Studio IntelliSense with suggestions for the tsconfig schema](media/tutorial-typescript/tsconfig-intellisense.png)
 
 ##<a name="buildOutsideVS"></a>I need to build my project outside of Visual Studio, how do I do that?
 By default, Visual Studio is building TypeScript files for you using the MSBuild build system behind the scenes. If you want to build your project outside of Visual Studio (in a Terminal on Mac OS X, for example), then we recommend using a JavaScript task runner, such as [Gulp](http://www.gulpjs.com). To learn more, [see our Gulp tutorial](../tutorial-gulp/README.md).
