@@ -1,3 +1,9 @@
+<properties pageTitle="Ionic Tutorial" 
+  description="This is an article on ionic tutorial" 
+  services="" 
+  documentationCenter=""
+  authors="bursteg" />
+
 #<a name="ci"></a>Using Gulp to Build Cordova Projects
 **This tutorial is part of a series on [using Gulp with Apache Cordova projects](http://go.microsoft.com/fwlink/?LinkID=533767) in Visual Studio 2015 and does not apply to Visual Studio 2013 CTPs.**
 

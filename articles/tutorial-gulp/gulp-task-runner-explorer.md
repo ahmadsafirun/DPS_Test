@@ -1,3 +1,9 @@
+<properties pageTitle="Ionic Tutorial" 
+  description="This is an article on ionic tutorial" 
+  services="" 
+  documentationCenter=""
+  authors="bursteg" />
+
 #<a name="invoke"></a>Invoking Gulp Tasks in a Cordova Build
 **This tutorial is part of a series on [using Gulp with Apache Cordova projects](http://go.microsoft.com/fwlink/?LinkID=533767) in Visual Studio 2015 and does not apply to Visual Studio 2013 CTPs.**
 
@@ -24,7 +30,7 @@ Next, create a [package.json](http://go.microsoft.com/fwlink/?LinkID=533781) fil
 
 You can install these dependencies at any time in Visual Studio by right-clicking on the Dependencies node in the Solution Explorer and selecting "Restore Packages".
 
-![Restore Packages](<media/gulp-4.png>)
+![Restore Packages](<media/gulp-task-runner-explorer/gulp-4.png>)
 
 Note that, thanks to Visual Studio's command line interoperability, you can also update package.json outside of VS and type the following to install whatever you have added to package.json:
 
@@ -51,15 +57,15 @@ gulp.task("before-build", function() {
 
 In Visual Studio, open the Task Runner Explorer by going to View \> Other Windows \> Task Runner Explorer.
 
-![View Menu](<media/gulp-1.png>)
+![View Menu](<media/gulp-task-runner-explorer/gulp-1.png>)
 
 After clicking the "Refresh" button you will then see the Task Runner Explorer with the before-build task we created visible.
 
-![Before Build Task](<media/gulp-2.png>)
+![Before Build Task](<media/gulp-task-runner-explorer/gulp-2.png>)
 
 Now to attach this to the "Before Build" event, right click and select Bindings \> Before Build.
 
-![Before Build Task Binding](<media/gulp-3.png>)
+![Before Build Task Binding](<media/gulp-task-runner-explorer/gulp-3.png>)
 
 The next time you run a build this task will automatically fire! You can also execute tasks without binding them to an event simply by selecting "Run" from the same context menu.
 

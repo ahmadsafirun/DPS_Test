@@ -108,13 +108,13 @@ However, if the plugin is only available through GitHub, you can follow these st
 
 3. Click on the .zip link of the version of the plugin you want to access
 
-	![Release Zip](<media/README/git-local-0.png>)
+	![Release Zip](<media/tips-and-workarounds-general-readme/git-local-0.png>)
 
 4. Unzip this plugin on your local filesystem
 
 5. Add the plugin to your project from this local location by using the "Local" option in the "Custom" tab of the config.xml designer.
 
-	![Custom Local Plugin](<media/README/git-local-1.png>)
+	![Custom Local Plugin](<media/tips-and-workarounds-general-readme/git-local-1.png>)
 	
 <a name="plugin-npm"></a>
 ##Using a Npm Sourced Plugins Not Listed in the Config Designer or with Cordova < 5.0.0
@@ -125,9 +125,9 @@ A significant change tied to this switch over and the release of Cordova 5.0.0 t
 
 As a result, core plugins like Camera have changed from [org.apache.cordova.camera](http://plugins.cordova.io/#/package/org.apache.cordova.camera) in version 0.3.6 of the plugin to [cordova-plugin-camera](https://www.npmjs.com/package/cordova-plugin-camera) in versions 1.0.0 and higher geared for Cordova 5.0.0 and up.
 
-![Custom Local Plugin](<media/README/cordova-5-4.png>)
+![Custom Local Plugin](<media/tips-and-workarounds-general-readme/cordova-5-4.png>)
 
-![Custom Local Plugin](<media/README/cordova-5-5.png>)
+![Custom Local Plugin](<media/tips-and-workarounds-general-readme/cordova-5-5.png>)
 
 You can find running list of [old verses new plugin IDs in this location](https://github.com/stevengill/cordova-registry-mapper/blob/master/index.js).
 

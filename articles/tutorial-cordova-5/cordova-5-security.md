@@ -1,3 +1,9 @@
+<properties pageTitle="Ionic Tutorial" 
+  description="This is an article on ionic tutorial" 
+  services="" 
+  documentationCenter=""
+  authors="bursteg" />
+
 #Introduction to Cordova 5 Security
 
 **Note: If the default blank template in Visual Studio 2015 is does not default to 5.1.1, you should update Tools for Apache Cordova.** Some very early adopters may not see some of the improvments described in this document until after you update. You will soon see a notification in the in the  notification center (flag in the upper right) prompting you to update. 
