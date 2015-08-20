@@ -43,7 +43,7 @@ More specifically, following the instructions from [this article](http://www.tom
 If this does not resolve the issue, you can upgrade to a 64-bit version of the JDK [from here](http://download.oracle.com/otn-pub/java/jdk/7u79-b15/jdk-7u79-windows-x64.exe) and update the JAVA_HOME environment variable to the new install location.
 
 ## More Information
-* [Read tutorials and learn about tips, tricks, and known issues](../../Readme.md)
+* [Read tutorials and learn about tips, tricks, and known issues](../../cordova-docs-readme.md)
 * [Download samples from our Cordova Samples repository](http://github.com/Microsoft/cordova-samples)
 * [Follow us on Twitter](https://twitter.com/VSCordovaTools)
 * [Visit our site http://aka.ms/cordova](http://aka.ms/cordova)

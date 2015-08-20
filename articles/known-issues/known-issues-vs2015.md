@@ -5,7 +5,7 @@
   authors="bursteg" />
 
 #**Known Issues - Visual Studio 2015**
-This article covers [known issues](../Readme.md#knownissues) specific to Visual Studio Tools for Apache Cordova 2015. 
+This article covers [known issues](../cordova-docs-readme.md#knownissues) specific to Visual Studio Tools for Apache Cordova 2015. 
 
 ----------
 **Project structure change from CTP3/3.1:** Projects created in an earlier version of Visual Studio will need to be migrated to support the new Cordova CLI based project structure in VS 2015 that is more interoperable with 3rd party tools and CLIs. 
@@ -139,7 +139,7 @@ However, if you update your Cordova version to 5.0.0 or later the config.xml des
 ----------
 **Old versions of Cordova plugins due to Cordova plugin ID changes:** A significant change occurred with Cordova 5.0.0+ that also altered the IDs of many core Cordova plugins. The Visual Studio 2015 RC config.xml designer uses the old IDs (ex: org.apache.cordova.camera not cordova-plugin-camera) because Cordova 4.3.1 and below cannot access plugins using these new IDs and the default template uses 4.3.0. 
 
-To install updated plugins, follow [this proceedure to install a npm sourced plugin](../tips-and-workarounds/general/README.md#plugin-npm). 
+To install updated plugins, follow [this proceedure to install a npm sourced plugin](../tips-and-workarounds/general/tips-and-workarounds-general-readme.md#plugin-npm). 
 
 *Note that these updated plugins were tested on Cordova 5.0.0 or later and therefore may or may not work on earlier versions of Cordova.* We advise against updating your plugins when using older versions of Cordova unless you are attempting to solve a specific problem.
 
@@ -152,7 +152,7 @@ To install updated plugins, follow [this proceedure to install a npm sourced plu
 - plugins/remote_ios.json
 - plugins/wp8.json.
 
-Remove these files from source control if you are not checking in the "platforms" folder (reccomended). For local copies, you can either fetch a fresh copy from source control or remove the above files along with platforms found in the "platforms" folder to resolve the issue. See [tips and workarounds](../tips-and-workarounds/general/README.md#l#missingexclude) for additional details.
+Remove these files from source control if you are not checking in the "platforms" folder (reccomended). For local copies, you can either fetch a fresh copy from source control or remove the above files along with platforms found in the "platforms" folder to resolve the issue. See [tips and workarounds](../tips-and-workarounds/general/tips-and-workarounds-general-readme.md#l#missingexclude) for additional details.
 
 ----------
 **Plugin with variables not working:** Due to a Cordova issue with Cordova 4.3.0 and a bug in VS 2015 RC, you can run into problems with plugin variables in Cordova < 5.0.0. Plugin variable information is lost if you install the "plugin" before the "platform" which can happen depending on your workflow. They do, however, function in Cordova 5.1.1 which you can use with VS 2015 RC. To update to 5.1.1 and use plugin variables, you will need to update your VS project and use the command line.
@@ -177,7 +177,7 @@ Remove these files from source control if you are not checking in the "platforms
 
 ----------
 ## More Information
-* [Read up on additional known issues, tips, tricks, and tutorials](../Readme.md)
+* [Read up on additional known issues, tips, tricks, and tutorials](../cordova-docs-readme.md)
 * [Download samples from our Cordova Samples repository](http://github.com/Microsoft/cordova-samples)
 * [Follow us on Twitter](https://twitter.com/VSCordovaTools)
 * [Visit our site http://aka.ms/cordova](http://aka.ms/cordova)

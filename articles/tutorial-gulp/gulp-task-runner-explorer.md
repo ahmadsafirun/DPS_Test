@@ -30,7 +30,7 @@ Next, create a [package.json](http://go.microsoft.com/fwlink/?LinkID=533781) fil
 
 You can install these dependencies at any time in Visual Studio by right-clicking on the Dependencies node in the Solution Explorer and selecting "Restore Packages".
 
-![Restore Packages](<media/gulp-task-runner-explorer/gulp-4.png>)
+![Restore Packages](media/gulp-task-runner-explorer/gulp-4.png)
 
 Note that, thanks to Visual Studio's command line interoperability, you can also update package.json outside of VS and type the following to install whatever you have added to package.json:
 
@@ -57,15 +57,15 @@ gulp.task("before-build", function() {
 
 In Visual Studio, open the Task Runner Explorer by going to View \> Other Windows \> Task Runner Explorer.
 
-![View Menu](<media/gulp-task-runner-explorer/gulp-1.png>)
+![View Menu](media/gulp-task-runner-explorer/gulp-1.png)
 
 After clicking the "Refresh" button you will then see the Task Runner Explorer with the before-build task we created visible.
 
-![Before Build Task](<media/gulp-task-runner-explorer/gulp-2.png>)
+![Before Build Task](media/gulp-task-runner-explorer/gulp-2.png)
 
 Now to attach this to the "Before Build" event, right click and select Bindings \> Before Build.
 
-![Before Build Task Binding](<media/gulp-task-runner-explorer/gulp-3.png>)
+![Before Build Task Binding](media/gulp-task-runner-explorer/gulp-3.png)
 
 The next time you run a build this task will automatically fire! You can also execute tasks without binding them to an event simply by selecting "Run" from the same context menu.
 
@@ -81,8 +81,8 @@ However, you may want to be able to simply assign bindings in Visual Studio and 
 To do so, **[follow these directions to add a pre-built Cordova hook to your project](./hook-task-runner-binding)**. You can then modify it as you see fit to meet your needs. 
 
 ## More Information
-* [Learn more about using Gulp with your Cordova projects](README.md)
-* [Read tutorials and learn about tips, tricks, and known issues](../Readme.md)
+* [Learn more about using Gulp with your Cordova projects](tutorial-gulp-readme.md)
+* [Read tutorials and learn about tips, tricks, and known issues](../cordova-docs-readme.md)
 * [Download samples from our Cordova Samples repository](http://github.com/Microsoft/cordova-samples)
 * [Follow us on Twitter](https://twitter.com/VSCordovaTools)
 * [Visit our site http://aka.ms/cordova](http://aka.ms/cordova)

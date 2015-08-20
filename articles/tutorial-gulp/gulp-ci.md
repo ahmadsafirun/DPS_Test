@@ -54,11 +54,11 @@ The "npm install -g gulp" command will install the Gulp command line interface a
 
 You can also quickly execute Gulp tasks from the Task Runner Explorer right from Visual Studio. Simply go to View \> Other Windows \> Task Runner Explorer to bring it up for use. 
 
-![View Menu](<media/gulp-ci/gulp-1.png>)
+![View Menu](media/gulp-ci/gulp-1.png)
 
 Even better, all you need to do to install dependencies you add to package.json is to right-click on the Dependencies node in the Solution Explorer and select "Restore Packages".
 
-![Restore Packages](<media/gulp-ci/gulp-4.png>)
+![Restore Packages](media/gulp-ci/gulp-4.png)
 
 Note that the **"cordova" and "cordova-lib" npm package version numbers do not match for CLI 3.6.3 or earlier**. If you need to target these older Cordova versions, you can instead reference the "cordova" npm package in your package.json file and edit the require statement in the above Gulp script as follows:
 
@@ -192,8 +192,8 @@ npm install --save-dev gulp-uglify
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 ## More Information
-* [Learn more about using Gulp with your Cordova projects](README.md)
-* [Read tutorials and learn about tips, tricks, and known issues](../Readme.md)
+* [Learn more about using Gulp with your Cordova projects](tutorial-gulp-readme.md)
+* [Read tutorials and learn about tips, tricks, and known issues](../cordova-docs-readme.md)
 * [Download samples from our Cordova Samples repository](http://github.com/Microsoft/cordova-samples)
 * [Follow us on Twitter](https://twitter.com/VSCordovaTools)
 * [Visit our site http://aka.ms/cordova](http://aka.ms/cordova)

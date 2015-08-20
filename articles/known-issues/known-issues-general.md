@@ -5,7 +5,7 @@
   authors="bursteg" />
 
 #**General Known Issues**
-This article covers general [known issues](../Readme.md#knownissues) related to Visual Studio Tools for Apache Cordova. For version specific issues, see:
+This article covers general [known issues](../cordova-docs-readme.md#knownissues) related to Visual Studio Tools for Apache Cordova. For version specific issues, see:
 
 - [Known issues for Visual Studio 2015](known-issues-vs2015.md)
 - [Known issues for Tools for Apache Cordova CTP 3/3.1](known-issues-vs2013.md)
@@ -22,7 +22,7 @@ This article covers general [known issues](../Readme.md#knownissues) related to 
 - plugins/remote_ios.json
 - plugins/wp8.json.
 
-Remove these files from source control if you are not checking in the "platforms" folder (recommended). For local copies, you can either fetch a fresh copy from source control or remove the above files along with platforms found in the "platforms" folder to resolve the issue. See [tips and workarounds](../tips-and-workarounds/general/README.md#l#missingexclude) for additional details.
+Remove these files from source control if you are not checking in the "platforms" folder (recommended). For local copies, you can either fetch a fresh copy from source control or remove the above files along with platforms found in the "platforms" folder to resolve the issue. See [tips and workarounds](../tips-and-workarounds/general/tips-and-workarounds-general-readme.md#l#missingexclude) for additional details.
 
 ----------
 **Plugin with variables not working:** Due to a Cordova issue with Cordova 4.3.0 and 4.3.1, you can run into problems with plugin variables in Cordova < 5.0.0. Plugin variable information is lost if you install the "plugin" before the "platform" which can happen depending on your workflow. They do, however, function in Cordova 5.1.1 which you can use with VS 2015. Follow these steps to use a plugin with variables:
@@ -34,7 +34,7 @@ Remove these files from source control if you are not checking in the "platforms
  3. Re-add your plugin via "Plugins" tab in the config.xml designer
  
 ----------
-**Slow first build or first plugin add:** The first build or plugin add for a given version of Cordova will be slower than subsequent builds as VS must first dynamically acquire Cordova. See the Output Window for more detail on progress. Further, the first remote iOS build will exhibit the same behavior as the agent downloads Cordova on your OSX machine. If you encounter a CordovaModuleLoadError with the first iOS build for a given Cordova version you can follow [these instructions](../tips-and-workarounds/ios/README.md#npm-cache) to resolve the problem.
+**Slow first build or first plugin add:** The first build or plugin add for a given version of Cordova will be slower than subsequent builds as VS must first dynamically acquire Cordova. See the Output Window for more detail on progress. Further, the first remote iOS build will exhibit the same behavior as the agent downloads Cordova on your OSX machine. If you encounter a CordovaModuleLoadError with the first iOS build for a given Cordova version you can follow [these instructions](../tips-and-workarounds/ios/tips-and-workarounds-ios-readme.md#npm-cache) to resolve the problem.
 
 ----------
 **Old versions of Cordova plugins due to Cordova plugin ID changes:** A significant change occurred with Cordova 5.0.0+ that also altered the IDs of many core Cordova plugins. The Visual Studio 2015 config.xml designer uses the old IDs (ex: org.apache.cordova.camera not cordova-plugin-camera) with Cordova 4.3.1 and below since this version of the Cordova  < 5.0.0 do not support npm. 
@@ -47,10 +47,10 @@ If you update your Cordova version to 5.1.1 or later the config.xml designer wil
 ----------
 **Git sourced plugins will not install with Cordova 5.1.1 only:** Cordova 5.1.1 has a bug that can cause plugins installed from a Git repo to fail with the error "Error: EXDEV, cross-device link not permitted" if the project is on a different drive than your temp folder. 
 
-See [tips and workarounds](../tips-and-workarounds/general/README.md#plugin-xml) for information on adding plugins not in the config designer from either the Cordova plugin repository or npm. If you must add a Git version of the plugin, either move your project to the same drive as your temp folder when installing or you can instead download a copy, unzip it, and add the plugin from the filesystem. 
+See [tips and workarounds](../tips-and-workarounds/general/tips-and-workarounds-general-readme.md#plugin-xml) for information on adding plugins not in the config designer from either the Cordova plugin repository or npm. If you must add a Git version of the plugin, either move your project to the same drive as your temp folder when installing or you can instead download a copy, unzip it, and add the plugin from the filesystem. 
 
 ----------
-**TypeError: Request path contains unescaped characters:** When building or installing a plugin you may encounter this error if you are using a proxy with certain versions of Node.js and Cordova after a "npm http GET". This is a Cordova issue and the simplest workaround is to downgrade [Node.js 0.10.29](http://nodejs.org/dist/v0.10.29/). This will be resolved in a future version of Cordova. See [tips and workarounds](../tips-and-workarounds/general/README.md#cordovaproxy) for additional details.
+**TypeError: Request path contains unescaped characters:** When building or installing a plugin you may encounter this error if you are using a proxy with certain versions of Node.js and Cordova after a "npm http GET". This is a Cordova issue and the simplest workaround is to downgrade [Node.js 0.10.29](http://nodejs.org/dist/v0.10.29/). This will be resolved in a future version of Cordova. See [tips and workarounds](../tips-and-workarounds/general/tips-and-workarounds-general-readme.md#cordovaproxy) for additional details.
 
 ----------
 **Errors from npm related to permission problems:** If you installed Visual Studio or Node.js running as an administrator, you can run into problems where npm attempts to install npm packages under "C:\Program Files (x86)\node.js". You will typically see errors in the Output Window similar to this one: "npm ERR! error rolling back error : EPERM, unlink 'C:\Program Files (x86)\nodejs\vs-tac-cli.cmd'". To resolve this issue you can re-install Node.js or reconfigured npm using these commands from the command prompt and restarting Visual Studio:
@@ -95,7 +95,7 @@ npm config set registry http://registry.npmjs.org
 
 ----------
 ## More Information
-* [Read up on additional known issues, tips, tricks, and tutorials](../Readme.md)
+* [Read up on additional known issues, tips, tricks, and tutorials](../cordova-docs-readme.md)
 * [Download samples from our Cordova Samples repository](http://github.com/Microsoft/cordova-samples)
 * [Follow us on Twitter](https://twitter.com/VSCordovaTools)
 * [Visit our site http://aka.ms/cordova](http://aka.ms/cordova)

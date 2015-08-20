@@ -5,7 +5,7 @@
   authors="bursteg" />
 
 #**Known Issues - CTP 3/3.1 for Visual Studio 2013**
-This article covers [known issues](../Readme.md#knownissues) specific to Visual Studio Tools for Apache Cordova CTP3/3.1 and Visual Studio 2013. 
+This article covers [known issues](../cordova-docs-readme.md#knownissues) specific to Visual Studio Tools for Apache Cordova CTP3/3.1 and Visual Studio 2013. 
 
 ----------
 **Missing iOS Icons and Splashscreens:** When using version 0.2.8 or higher of vs-mda-remote, you should add the following XML elements to your config.xml to ensure your icons and splash screens are picked up properly.
@@ -51,7 +51,7 @@ Alternatively you can install version 0.2.7 instead by using the following comma
 
 ----------
 ## More Information
-* [Read up on additional known issues, tips, tricks, and tutorials](../Readme.md)
+* [Read up on additional known issues, tips, tricks, and tutorials](../cordova-docs-readme.md)
 * [Download samples from our Cordova Samples repository](http://github.com/Microsoft/cordova-samples)
 * [Follow us on Twitter](https://twitter.com/VSCordovaTools)
 * [Visit our site http://aka.ms/cordova](http://aka.ms/cordova)
