@@ -11,15 +11,15 @@ Here is step by step tutorial on how to go about it.
 
 ### Windows:
 Once you are ready to package your application, using the solution platforms dropdown, change the platform to the specific Windows platform that matches the platform you are targeting as shown in the figure below:
-![Windows: Debug targets](media/tutorial-package-pubish-readme/windows_target.png)
+![Windows: Debug targets](media/tutorial-package-publish-readme/windows_target.png)
 
 Once you select the target platform, use the ‘Create App Packages’ menu from the Project  Store menu as shown below, to start the packaging wizard.
 
-![Windows: Create Appx Packages](media/tutorial-package-pubish-readme/windows_createPackage.png)
+![Windows: Create Appx Packages](media/tutorial-package-publish-readme/windows_createPackage.png)
 
 The wizard guides you through a workflow that is similar to the workflow for creating Windows desktop and Windows phone APPX packages. It asks you to first log into your developer account, then associate your package with a new or existing name and finally builds a release version of the package generating the Package.StoreAssociation.xml in the res\native\windows folder:
 
-![Windows: Resources](media/tutorial-package-pubish-readme/windows_assets.png)
+![Windows: Resources](media/tutorial-package-publish-readme/windows_assets.png)
 
 **Note:**
 - Cordova generates a XAP package for Windows Phone 8 platform and hence ‘Create App Packages’ option is disabled if you choose Windows Phone 8 as target platform.
@@ -28,15 +28,15 @@ The wizard guides you through a workflow that is similar to the workflow for cre
 
 ### Android:
 Once you are ready to package your application for android, change the platform to the android platform, the build configuration to release and select ‘device’ as debug target as shown in the figure below:
-![Android: Debug Target](media/tutorial-package-pubish-readme/android_debug.png)
+![Android: Debug Target](media/tutorial-package-publish-readme/android_debug.png)
 
 If you initiate a build with this configuration, VS builds an unsigned release package that can be deployed to a machine but cannot be published to store.
 
 **Cordova CLI verions < 5.0**, use ANT to build android applications. In order to create a release signed package, you need to provide keystore information to the build in the ant.properties file under res\native\android. A keystore is a binary file that contains a set of private keys. You must keep your keystore in a safe and secure place.
-![Android: Build assets](media/tutorial-package-pubish-readme/android_assets.png)
+![Android: Build assets](media/tutorial-package-publish-readme/android_assets.png)
 
 **Cordova CLI verions > 5.0**, use GRADLE to build android applications. In order to create a release signed package, you need to provide keystore information to the build in the build.json file under the project root. A keystore is a binary file that contains a set of private keys. You must keep your keystore in a safe and secure place.
-![Android: Build assets](media/tutorial-package-pubish-readme/android_assets_cordova5.png)
+![Android: Build assets](media/tutorial-package-publish-readme/android_assets_cordova5.png)
 
 You can either provide information about existing key-store or create a new one. Here I am going to explain how you can create a new key-store using standard tools from the Android SDK and the JDK:
 1. Open a new admin command prompt.
@@ -115,41 +115,41 @@ You need developer certificate and a developer provisioning profile to install, 
 2. Choose **Member Center** and login with your developer account credentials.
 
 3. Choose **Certificates, Identifiers & Profiles**.
-![ios: CertSection](media/tutorial-package-pubish-readme/ios-CertSection.png)
+![ios: CertSection](media/tutorial-package-publish-readme/ios-CertSection.png)
 
 4. Choose **Certificates**, click the “+” sign to create a new Certificate & choose the App Store and Ad Hoc radio button.
-![ios: Dev Cert](media/tutorial-package-pubish-readme/ios-CertDis.png)
+![ios: Dev Cert](media/tutorial-package-publish-readme/ios-CertDis.png)
 
 5. Scroll to the bottom of the page and choose **Continue**.
 
 6. The next screen explains the process of creating a **Certificate Signing Request (CSR)**. Click **Continue** at the bottom of the page.
-![ios: CSR](media/tutorial-package-pubish-readme/ios-csr.png)
+![ios: CSR](media/tutorial-package-publish-readme/ios-csr.png)
 
 7. Navigate to the CSR file & choose that file.
-![ios: Using CSR](media/tutorial-package-pubish-readme/ios-choosecsr.png)
+![ios: Using CSR](media/tutorial-package-publish-readme/ios-choosecsr.png)
 
 8. Choose **Generate**. Once you refresh your browser, you can download the developer certificate by choosing **Download**.
 
 The certificate will download into your **downloads** folder & double-clicking this will install this file into Keychain.  This is what the Development Certificate looks like in Keychain Access.
-![ios: Using CSR](media/tutorial-package-pubish-readme/ios-disCertLoc.png)
+![ios: Using CSR](media/tutorial-package-publish-readme/ios-disCertLoc.png)
 
 
 ##### The process of generating Certificate Signing Request (CSR) [step 6, above] is as follows:
 In order for you to generate a certificate you must request a certificate using keychain access.
 - Launch **Keychain Access**. Keychain Access is located in Macintosh HD/Applications/Utilities -
-![ios: KeyChain](media/tutorial-package-pubish-readme/ios-keyChain.png)
+![ios: KeyChain](media/tutorial-package-publish-readme/ios-keyChain.png)
 
 - Once Keychain Access is launched, choose Keychain Access > Certificate Assistant >Request a Certificate from a Certificate Authority.
-![ios: Request CSR](media/tutorial-package-pubish-readme/ios-reqcsr.png)
+![ios: Request CSR](media/tutorial-package-publish-readme/ios-reqcsr.png)
 
 - Enter your Apple Developer Account email address, Common Name (your name),CA (Certificate Assistant) [optional] & Choose: Request is **Saved to disk**.
-![ios: Request CSR Information](media/tutorial-package-pubish-readme/ios-csrInfo.png)
+![ios: Request CSR Information](media/tutorial-package-publish-readme/ios-csrInfo.png)
 
 - Choose **Continue**, save the file to your hard drive and choose **Done**.
 
 Now you can go back to the distribution certificate section still active in your browser [step 7, above] and choose **Choose File**.
 
-![ios: Using CSR](media/tutorial-package-pubish-readme/ios-usecsr.png)
+![ios: Using CSR](media/tutorial-package-publish-readme/ios-usecsr.png)
 
 #### Generating distribution provisioning profile:
 1. In a browser, go to [Apple Dev Portal](https://developer.apple.com).
@@ -157,35 +157,35 @@ Now you can go back to the distribution certificate section still active in your
 2. Choose **Member Center** and login with your developer account credentials.
 
 3. Choose **Certificates, Identifiers & Profiles**.
-![ios: CertSection](media/tutorial-package-pubish-readme/ios-CertSection.png)
+![ios: CertSection](media/tutorial-package-publish-readme/ios-CertSection.png)
 
 4. Choose **Provisioning**, click the “+” sign to add a new provisioning profile & choose **App Store** as shown in the figure below and choose **Continue**.
-![ios: Distribution profile](media/tutorial-package-pubish-readme/ios-proDis.png)
+![ios: Distribution profile](media/tutorial-package-publish-readme/ios-proDis.png)
 
 5. Select the correct App ID and choose **Continue**.
-![ios: Distribution profile, Selecting App Id](media/tutorial-package-pubish-readme/ios-proappid.png)
+![ios: Distribution profile, Selecting App Id](media/tutorial-package-publish-readme/ios-proappid.png)
 
 6. Select the certificates you wish to include in this provisioning profile. Choose **Continue** after you have selected the certificates.
 
-![ios: Distribution profile, Choosing certificates](media/tutorial-package-pubish-readme/ios-proCertChoice.png)
+![ios: Distribution profile, Choosing certificates](media/tutorial-package-publish-readme/ios-proCertChoice.png)
 
 7. Name the profile and choose “Generate” and download the provisioning profile.
-![ios: Distribution profile, Naming the profile](media/tutorial-package-pubish-readme/ios-proNaming.png)
+![ios: Distribution profile, Naming the profile](media/tutorial-package-publish-readme/ios-proNaming.png)
 
 8. Double-click that file to install it and then add it to the **Code signing section of *Build Settings* for Xcode**.
-![ios: XCode, build settings](media/tutorial-package-pubish-readme/ios-xcodeBuildSettings.png)
+![ios: XCode, build settings](media/tutorial-package-publish-readme/ios-xcodeBuildSettings.png)
 
 	###### 	Add Provisioning Profile
-![ios: XCode, build settings](media/tutorial-package-pubish-readme/ios-xcodepro.png)
+![ios: XCode, build settings](media/tutorial-package-publish-readme/ios-xcodepro.png)
 
 	###### 	Add Distribution Certificate
-![ios: XCode, build settings](media/tutorial-package-pubish-readme/ios-xcodecer.png)
+![ios: XCode, build settings](media/tutorial-package-publish-readme/ios-xcodecer.png)
 
 **Note:** While creating developer provisioning profile [after step 6], you will have to select the devices you wish to include in this provisioning profile. To install an app signed with this profile on a device, the device must be included.
-![ios: Developer profile, Choosing devices](media/tutorial-package-pubish-readme/ios-proDev.png)
+![ios: Developer profile, Choosing devices](media/tutorial-package-publish-readme/ios-proDev.png)
 
 Once you have installed the distribution certificates and the matching provisioning profiles in the XCode’s build settings on the remote agent, you are now ready to build a release package for iOS from VS. On your host Windows machine, in VS, change the platform to *iOS*, build configuration to *Release* and target to *Remote (or Local) Device*, as shown below:
-![ios: Debug targer](media/tutorial-package-pubish-readme/ios-vsrel.png)
+![ios: Debug targer](media/tutorial-package-publish-readme/ios-vsrel.png)
 
 This kicks of a build on the remote agent and uses the distribution certificate and the matching provisioning profile to build a release signed iPhone Application package (.ipa) which is then available at **<ProjectRoot>\bin\iOS\Release** folder on the host machine after the build completes.
 
