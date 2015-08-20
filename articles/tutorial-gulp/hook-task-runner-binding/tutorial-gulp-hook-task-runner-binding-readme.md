@@ -1,3 +1,9 @@
+<properties pageTitle="Ionic Tutorial" 
+  description="This is an article on ionic tutorial" 
+  services="" 
+  documentationCenter=""
+  authors="bursteg" />
+
 #Cordova Hook to Execute VS Task Runner Explorer Bindings from the Command Line
 
 License: MIT
