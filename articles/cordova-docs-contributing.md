@@ -1,3 +1,9 @@
+<properties pageTitle="Ionic Tutorial" 
+  description="This is an article on ionic tutorial" 
+  services="" 
+  documentationCenter=""
+  authors="bursteg" />
+
 ## How to contribute
 There are many ways that you can contribute to **cordova-docs**:
 * Submit a bug

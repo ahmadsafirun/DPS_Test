@@ -1,3 +1,9 @@
+<properties pageTitle="Ionic Tutorial" 
+  description="This is an article on ionic tutorial" 
+  services="" 
+  documentationCenter=""
+  authors="bursteg" />
+
 # Visual Studio Tools for Apache Cordova
 This repository contains a set of documents and tutorials for the **Visual Studio 2015** release of **[Tools for Apache Cordova](http://aka.ms/cordova).**
 
