@@ -5,7 +5,7 @@
   authors="bursteg" />
 
 #**Known Issues - Android**
-This article covers [known issues](../Readme.md#knownissues) related to Visual Studio Tools for Apache Cordova 2015 when building or deploying to Android devices or emulators. 
+This article covers [known issues](../cordova-docs-readme.md#knownissues) related to Visual Studio Tools for Apache Cordova 2015 when building or deploying to Android devices or emulators. 
 
 ----------
 **Cordova 5.x.x / Cordova Android 4.x.x:** See [Cordova 5.x.x known issues](known-issues-cordova5.md) for details on Android related issues that are specific to Cordova 5.0.0 and up.
@@ -35,7 +35,7 @@ The problem is that the Ant or Gradle build systems are running out of heap memo
 _JAVA_OPTIONS=-Xmx512M
 ~~~~~~~~~~~~~~~~~~~~~~
 
-See [Tips and Workarounds](../tips-and-workarounds/android/README.md#couldnotcreatevm) for additional details.
+See [Tips and Workarounds](../tips-and-workarounds/android/tips-and-workarounds-android-readme.md#couldnotcreatevm) for additional details.
 
 ----------
 **Missing Android SDK Versions:** If you already had the Android SDK installed, you may also need to update and install the SDK for Android 4.4.2 (API level 19), Android 5.0.1 (API Level 21), or Android 5.1.1 (API Level 22) . You may need to restart Visual Studio if it is open while updating the Android SDK through the SDK Manager to be able to build for Android after the update is complete. See [Manually Installing Dependencies](https://msdn.microsoft.com/en-us/library/dn757054.aspx#ThirdParty) for details.
@@ -48,7 +48,7 @@ See [Tips and Workarounds](../tips-and-workarounds/android/README.md#couldnotcre
 
 ----------
 ## More Information
-* [Read up on additional known issues, tips, tricks, and tutorials](../Readme.md)
+* [Read up on additional known issues, tips, tricks, and tutorials](../cordova-docs-readme.md)
 * [Download samples from our Cordova Samples repository](http://github.com/Microsoft/cordova-samples)
 * [Follow us on Twitter](https://twitter.com/VSCordovaTools)
 * [Visit our site http://aka.ms/cordova](http://aka.ms/cordova)

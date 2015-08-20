@@ -5,7 +5,7 @@
   authors="bursteg" />
 
 #**Known Issues - iOS**
-This article covers [known issues](../Readme.md#knownissues) related to Visual Studio Tools for Apache Cordova 2015 when building or deploying to iOS devices or simulators. 
+This article covers [known issues](../cordova-docs-readme.md#knownissues) related to Visual Studio Tools for Apache Cordova 2015 when building or deploying to iOS devices or simulators. 
 
 ----------
 **vs-ms-remote reports a 404 error when using VS 2015 RTM or later:** VS 2015 RTM and up uses a new "remotebuild" agent instead of vs-mda-remote. See [remotebuild installation instructions](http://go.microsoft.com/fwlink/?LinkID=533745) for details.
@@ -28,13 +28,13 @@ This article covers [known issues](../Readme.md#knownissues) related to Visual S
 **Slow first build:** The first build using the remote iOS build agent for a given version of Cordova will be slower than subsequent builds as the remote agent must first dynamically acquire Cordova on OSX. 
 
 ----------
-**Adding "plugins/remote_ios.json" to source control can result in non-functional plugins:** Five json files that can cause issues if added to source control are missing from the default source code exclusion list including "plugins/remote_ios.json." If you encounter a build that has non-functional Cordova APIs after fetching the project from source control, you should ensure that "plugins/android.json", "plugins/ios.json", "plugins/windows.json", "plugins/remote_ios.json", "plugins/wp8.json" are removed from source control and retry. See this [Tips and Workarounds](../tips-and-workarounds/general/README.md#missingexclude) for additional details.
+**Adding "plugins/remote_ios.json" to source control can result in non-functional plugins:** Five json files that can cause issues if added to source control are missing from the default source code exclusion list including "plugins/remote_ios.json." If you encounter a build that has non-functional Cordova APIs after fetching the project from source control, you should ensure that "plugins/android.json", "plugins/ios.json", "plugins/windows.json", "plugins/remote_ios.json", "plugins/wp8.json" are removed from source control and retry. See this [Tips and Workarounds](../tips-and-workarounds/general/tips-and-workarounds-general-readme.md#missingexclude) for additional details.
 
 ----------
 **Deploying to iOS 8.3 device fails from OSX Mavericks or below:** If deploying to iOS 8.3 device fails because vs-mda-remote cannot find DeveloperDiskImage.dmg, ensure you are running OSX Yosemite and Xcode 6.3. Xcode 6.3 is required to deploy to an 8.3 device and only runs on Yosemite.
 
 ----------
-**"Could not find module 'Q'" error when building iOS:** If your OSX machine has case a case sensitive filesystem you can hit with certain versions of Cordova like Cordova 5.1.1. (Most people do not turn on case sensitivity.) A fix is in the works and will be in the next version of the Cordova iOS platform along with an updated version of Cordova itself. Watch the [Cordova homepage](http://cordova.apache.org) for release announcements. Once the Cordova iOS platform is released you can follow [these directions](../tips-and-workarounds/general/README.md#cordova-platform-ver) to use it at release or you may wait until a full Cordova "tools" release also occurs and update the Cordova version via the config.xml designer.
+**"Could not find module 'Q'" error when building iOS:** If your OSX machine has case a case sensitive filesystem you can hit with certain versions of Cordova like Cordova 5.1.1. (Most people do not turn on case sensitivity.) A fix is in the works and will be in the next version of the Cordova iOS platform along with an updated version of Cordova itself. Watch the [Cordova homepage](http://cordova.apache.org) for release announcements. Once the Cordova iOS platform is released you can follow [these directions](../tips-and-workarounds/general/tips-and-workarounds-general-readme.md#cordova-platform-ver) to use it at release or you may wait until a full Cordova "tools" release also occurs and update the Cordova version via the config.xml designer.
 
 ----------
 **Incremental builds not faster than initial build when using VS 2015 RC or RTM:** Unfortunately this is a known issue with the iOS incremental build feature. We are actively working on a fix that will be resolved in a point release update.
@@ -44,7 +44,7 @@ This article covers [known issues](../Readme.md#knownissues) related to Visual S
 As a workaround, if you enter this state, soft reset your iOS device.
 
 ----------
-**Errors about missing header or library files in plugins:** There are a small number of Cordova plugins that contain "custom framework" files for iOS which use symlinks on OSX. Symlinks can break when the plugin is downloaded on Windows and then moved to an OSX machine. See this [Tips and Workarounds](../tips-and-workarounds/ios/README.md#symlink) article for a fix.
+**Errors about missing header or library files in plugins:** There are a small number of Cordova plugins that contain "custom framework" files for iOS which use symlinks on OSX. Symlinks can break when the plugin is downloaded on Windows and then moved to an OSX machine. See this [Tips and Workarounds](../tips-and-workarounds/ios/tips-and-workarounds-ios-readme.md#symlink) article for a fix.
 
 ----------
 **Custom iOS Simulator targets not in dropdown:** Not all iOS Simulator devices are currently listed in the Debug Target dropdown in Visual Studio. A workaround is to manually change the device using the iOS Simulator Hardware > Device menu.
@@ -57,7 +57,7 @@ As a workaround, if you enter this state, soft reset your iOS device.
 
 ----------
 ## More Information
-* [Read up on additional known issues, tips, tricks, and tutorials](../Readme.md)
+* [Read up on additional known issues, tips, tricks, and tutorials](../cordova-docs-readme.md)
 * [Download samples from our Cordova Samples repository](http://github.com/Microsoft/cordova-samples)
 * [Follow us on Twitter](https://twitter.com/VSCordovaTools)
 * [Visit our site http://aka.ms/cordova](http://aka.ms/cordova)

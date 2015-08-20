@@ -108,13 +108,13 @@ However, if the plugin is only available through GitHub, you can follow these st
 
 3. Click on the .zip link of the version of the plugin you want to access
 
-	![Release Zip](<media/tips-and-workarounds-general-readme/git-local-0.png>)
+	![Release Zip](media/tips-and-workarounds-general-readme/git-local-0.png)
 
 4. Unzip this plugin on your local filesystem
 
 5. Add the plugin to your project from this local location by using the "Local" option in the "Custom" tab of the config.xml designer.
 
-	![Custom Local Plugin](<media/tips-and-workarounds-general-readme/git-local-1.png>)
+	![Custom Local Plugin](media/tips-and-workarounds-general-readme/git-local-1.png)
 	
 <a name="plugin-npm"></a>
 ##Using a Npm Sourced Plugins Not Listed in the Config Designer or with Cordova < 5.0.0
@@ -125,9 +125,9 @@ A significant change tied to this switch over and the release of Cordova 5.0.0 t
 
 As a result, core plugins like Camera have changed from [org.apache.cordova.camera](http://plugins.cordova.io/#/package/org.apache.cordova.camera) in version 0.3.6 of the plugin to [cordova-plugin-camera](https://www.npmjs.com/package/cordova-plugin-camera) in versions 1.0.0 and higher geared for Cordova 5.0.0 and up.
 
-![Custom Local Plugin](<media/tips-and-workarounds-general-readme/cordova-5-4.png>)
+![Custom Local Plugin](media/tips-and-workarounds-general-readme/cordova-5-4.png)
 
-![Custom Local Plugin](<media/tips-and-workarounds-general-readme/cordova-5-5.png>)
+![Custom Local Plugin](media/tips-and-workarounds-general-readme/cordova-5-5.png)
 
 You can find running list of [old verses new plugin IDs in this location](https://github.com/stevengill/cordova-registry-mapper/blob/master/index.js).
 
@@ -211,7 +211,7 @@ One of the advantages associated with Apache Cordova is its active plugin commun
 
 4. See if there is an update to the plugin and install it by removing the plugin using the "Installed" tab of the config.xml designer and re-add the plugin. 
 
-5. Certain plugins can encounter problems when building for iOS due to their use of symlinks which are not well supported on the Windows NTFS filesystem. See [this article](../ios/README.md#symlink) for specific symptoms and a workaround.
+5. Certain plugins can encounter problems when building for iOS due to their use of symlinks which are not well supported on the Windows NTFS filesystem. See [this article](../ios/tips-and-workarounds-ios-readme.md#symlink) for specific symptoms and a workaround.
 
 6. See if the plugin causing problems has transitioned to npm as a part of the Cordova [repository transition](http://cordova.apache.org/announcements/2015/04/21/plugins-release-and-move-to-npm.html) and therefore has a new ID. You could have multiple copies of the same plugin installed (ex: both org.apache.cordova.camera and cordova-plugin-camera) or an outdated version of the plugin with bugs. Check the "Installed" tab of the config.xml designer for duplicates and consult [this article for information](#plugin-npm) on why the plugin ID may have changed and how to get an updated version of the plugin.
 
@@ -300,7 +300,7 @@ You can also use a platform from Git using the following syntax:
 Be aware that platform versions in Git are typically dev releases so you will likely encounter bugs.
 
 ## More Information
-* [Read tutorials and learn about tips, tricks, and known issues](../../Readme.md)
+* [Read tutorials and learn about tips, tricks, and known issues](../../cordova-docs-readme.md)
 * [Download samples from our Cordova Samples repository](http://github.com/Microsoft/cordova-samples)
 * [Follow us on Twitter](https://twitter.com/VSCordovaTools)
 * [Visit our site http://aka.ms/cordova](http://aka.ms/cordova)

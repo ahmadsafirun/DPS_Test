@@ -25,7 +25,7 @@ You can update your project to use Cordova 5.1.1 by following these steps:
 
 3. Change the version number to 5.1.1 and save config.xml
 
-	![Select Cordova Version](<media/tutorial-cordova-5-readme/cordova-5-0.png>)
+	![Select Cordova Version](media/tutorial-cordova-5-readme/cordova-5-0.png)
 
 Note that when you build this will **automatically remove any existing contents in the platforms folder in the filesystem**. If you have opted to customize the native project, you should consider migrating your custom assets to the **res/native** folder (ex: res/native/android) which will automatically add the files to the project before preparing the Cordova project to build.
 
@@ -86,7 +86,7 @@ When you upgrade a project to Cordova 5.0.0+, you will want to take the followin
 
 	2. Select "Whitelist" and click "Add"
 
-		![Add Whitelist Plugin](<media/tutorial-cordova-5-readme/cordova-5-7.png>)
+		![Add Whitelist Plugin](media/tutorial-cordova-5-readme/cordova-5-7.png)
 
 2. Update config.xml with the allow-intent or allow-navigation elements as needed:
 	1. If you have not already, right-click on config.xml and select "View Code"
@@ -134,9 +134,9 @@ A significant change to be aware of is that the IDs used to refer to many Cordov
 
 As a result, core plugins like Camera have changed from [org.apache.cordova.camera](http://go.microsoft.com/fwlink/?LinkID=617672) in version 0.3.6 of the plugin to [cordova-plugin-camera](http://go.microsoft.com/fwlink/?LinkID=617673) in versions 1.0.0 and higher.
 
-![Custom Local Plugin](<media/tutorial-cordova-5-readme/cordova-5-4.png>)
+![Custom Local Plugin](media/tutorial-cordova-5-readme/cordova-5-4.png)
 
-![Custom Local Plugin](<media/tutorial-cordova-5-readme/cordova-5-5.png>)
+![Custom Local Plugin](media/tutorial-cordova-5-readme/cordova-5-5.png)
 
 You can find running list of [old verses new plugin IDs in this location](http://go.microsoft.com/fwlink/?LinkID=617674). 
 
@@ -144,7 +144,7 @@ The config.xml designer in Visual Studio will automatically use the new plugin I
 
 **If you do not see this behavior, update Tools for Apache Cordova.** Some very early adopters may not see some of the improvments described in this document until after you update. You will soon see a notification in the in the  notification center (flag in the upper right) prompting you to update. 
 
-See [tips and workarounds](../tips-and-workarounds/general/README.md#plugin-npm) for additional details on adding npm versions of plugins to your project.
+See [tips and workarounds](../tips-and-workarounds/general/tips-and-workarounds-general-readme.md#plugin-npm) for additional details on adding npm versions of plugins to your project.
 
 ###Cordova Plugin Registry
 As of 7/14/2015, plugins.cordova.io now has two registry sections:
@@ -152,7 +152,7 @@ As of 7/14/2015, plugins.cordova.io now has two registry sections:
 - For the time being, the landing page of [plugins.cordova.io](http://go.microsoft.com/fwlink/?LinkID=618599) **does not contain npm sourced plugins** these plugins only work with Cordova 5.0.0+.
 - However, npm sourced plugins can be found on the **new [npm registry section of plugins.cordova.io](http://go.microsoft.com/fwlink/?LinkID=618600)** or you can search npm iself using the [ecosystem:cordova](http://go.microsoft.com/fwlink/?LinkID=617675) tag.
 
-	![Npm Plugin Registry](<media/tutorial-cordova-5-readme/cordova-5-9.png>)
+	![Npm Plugin Registry](media/tutorial-cordova-5-readme/cordova-5-9.png)
 
 Both sets of plugins can be used with Cordova 5.0.0+ so in the short term you may need to search in both locations for plugins. Plugins found in npm are the most likely to work without issue with Cordova 5.0.0 and higher and may or may not work with earlier versions of Cordova. Npm will be the eventual source of truth, but things are still in a transition period.
 
@@ -160,7 +160,7 @@ Both sets of plugins can be used with Cordova 5.0.0+ so in the short term you ma
 ###Cordova 3.x and 4.x Don't Support Npm as a Plugin Source
 An early source of confusion can lead from the fact that Cordova 3.x and 4.x cannot use plugins sourced from npm. The Cordova CLI in these versions simply does not have the capability. A specific issue that can come up here is that updates to plugins will now generally be going to npm **not** the older plugin registry sourced method used by these earlier version of Cordova.
 
-Generally your best course of action if you need an updated plugin is to also update to Cordova 5.1.1 or later. See the [tips and workarounds](../tips-and-workarounds/general/README.md#plugin-npm) section if you absolutley must get an updated plugin for a project that uses an earlier version of Cordova for potential options.
+Generally your best course of action if you need an updated plugin is to also update to Cordova 5.1.1 or later. See the [tips and workarounds](../tips-and-workarounds/general/tips-and-workarounds-general-readme.md#plugin-npm) section if you absolutley must get an updated plugin for a project that uses an earlier version of Cordova for potential options.
 
 <a name="gradle"></a>
 ##Gradle Build Instead of Ant for Android
@@ -203,7 +203,7 @@ Simply updating to Cordova 5.0.0+ will automatically cause Gradle to be used fro
 
 		... replacing the Cordova version and plugin name for those that apply to your situation. You can also specify a fully qualified Git URI or filesystem path in place of the plugin name.
 
-	2. If the problem reproduces, you may  want to contact the plugin author and let them know about the problem. Before doing so, be sure to check for existing open issue as more than likely there's already one on the plugin author's GitHub site that you can use to provide additional information. Mention that you encountered issues when using Tools for Apache Cordova but include the Cordova CLI repro for the plugin author's benefit. See the [tips and workarounds](../tips-and-workarounds/general/README.md#plugin-troubleshoot) section of our docs for additional troubleshooting tips.
+	2. If the problem reproduces, you may  want to contact the plugin author and let them know about the problem. Before doing so, be sure to check for existing open issue as more than likely there's already one on the plugin author's GitHub site that you can use to provide additional information. Mention that you encountered issues when using Tools for Apache Cordova but include the Cordova CLI repro for the plugin author's benefit. See the [tips and workarounds](../tips-and-workarounds/general/tips-and-workarounds-general-readme.md#plugin-troubleshoot) section of our docs for additional troubleshooting tips.
 
 <a name="crosswalk"></a>
 ##Pluggable WebViews and the Crosswalk WebView for Android
@@ -224,14 +224,14 @@ To use the Crosswalk WebView plugin from Visual Studio, follow these steps:
 
 2. Select "Crosswalk WebView" and click "Add"
 
-	![Add Crosswalk Plugin](<media/tutorial-cordova-5-readme/cordova-5-10.png>)
+	![Add Crosswalk Plugin](media/tutorial-cordova-5-readme/cordova-5-10.png)
 		
 The next time you build, your app will be running in the Crosswalk WebView. Note that the first build for Android in particular will take a bit given the plugin does some dynamic acquisition.
 
 ###Tips on Using the Crosswalk
 If you are using the standard Android Emulator, be sure to check the **Use Host CPU** option in the AVD you create and have up to date graphics drivers installed on your system or the app will crash due to Crosswalk's support of WebGL.
 
-![Use Host GPU](<media/tutorial-cordova-5-readme/cordova-5-1.png>)
+![Use Host GPU](media/tutorial-cordova-5-readme/cordova-5-1.png)
 
 Finally, if you encounter a "Could not create the Java Virtual Machine" error, add the following environment variable to your system and restart VS to bump up Java's heap memory:
 
@@ -268,13 +268,13 @@ You can follow these steps to use Cordova Windows 10 with Visual Studio:
 
 6. Change the "Windows Target Version" to "Windows 10.0"
 
-	![Select Cordova Version](<media/tutorial-cordova-5-readme/cordova-5-8.png>)
+	![Select Cordova Version](media/tutorial-cordova-5-readme/cordova-5-8.png)
 
 That's it! Underneath the convers Cordova will switch from an 8.1 project to a new Universal App project and take care of the rest! Just use the "Debug" dropdown to deploy to a Windows 10 device, use your Windows 10 PC, or use a Windows 10 emulator.
 
 ## More Information
 * [Learn about security features in Apache Cordova 5](./cordova-5-security.md)
-* [Read tutorials and learn about tips, tricks, and known issues](../Readme.md)
+* [Read tutorials and learn about tips, tricks, and known issues](../cordova-docs-readme.md)
 * [Download samples from our Cordova Samples repository](http://github.com/Microsoft/cordova-samples)
 * [Follow us on Twitter](https://twitter.com/VSCordovaTools)
 * [Visit our site http://aka.ms/cordova](http://aka.ms/cordova)

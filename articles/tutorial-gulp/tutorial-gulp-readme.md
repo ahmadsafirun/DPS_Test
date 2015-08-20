@@ -14,7 +14,7 @@
 3.  [Compiling TypeScript](http://go.microsoft.com/fwlink/?LinkID=533769)
 
 ## More Information
-* [Read tutorials and learn about tips, tricks, and known issues](../Readme.md)
+* [Read tutorials and learn about tips, tricks, and known issues](../cordova-docs-readme.md)
 * [Download samples from our Cordova Samples repository](http://github.com/Microsoft/cordova-samples)
 * [Follow us on Twitter](https://twitter.com/VSCordovaTools)
 * [Visit our site http://aka.ms/cordova](http://aka.ms/cordova)

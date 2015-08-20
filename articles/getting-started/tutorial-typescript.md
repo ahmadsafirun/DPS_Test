@@ -89,7 +89,7 @@ As you write your tsconfig JSON, IntelliSense will offer suggestions to help mak
 ![Visual Studio IntelliSense with suggestions for the tsconfig schema](media/tutorial-typescript/tsconfig-intellisense.png)
 
 ##<a name="buildOutsideVS"></a>I need to build my project outside of Visual Studio, how do I do that?
-By default, Visual Studio is building TypeScript files for you using the MSBuild build system behind the scenes. If you want to build your project outside of Visual Studio (in a Terminal on Mac OS X, for example), then we recommend using a JavaScript task runner, such as [Gulp](http://www.gulpjs.com). To learn more, [see our Gulp tutorial](../tutorial-gulp/README.md).
+By default, Visual Studio is building TypeScript files for you using the MSBuild build system behind the scenes. If you want to build your project outside of Visual Studio (in a Terminal on Mac OS X, for example), then we recommend using a JavaScript task runner, such as [Gulp](http://www.gulpjs.com). To learn more, [see our Gulp tutorial](../tutorial-gulp/tutorial-gulp-readme.md).
 
 ##<a name="learnMore"></a>Where can I learn more about using TypeScript with Cordova?
 Here are a few links to help you learn more about working with TypeScript:
