@@ -4,7 +4,7 @@
   documentationCenter=""
   authors="bursteg" />
 
-## Building Your First Cordova Plugin ##
+# Building Your First Cordova Plugin
 
 ### Step 1: Determine what you want your plugin to do ###
 Cordova plugins are appropriate in two main cases:
