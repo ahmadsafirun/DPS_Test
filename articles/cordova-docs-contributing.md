@@ -4,7 +4,7 @@
   documentationCenter=""
   authors="bursteg" />
 
-## How to contribute
+# How to contribute
 There are many ways that you can contribute to **cordova-docs**:
 * Submit a bug
 * Verify fixes for bugs
