@@ -95,7 +95,7 @@ For Windows & Windows Phone 8.1:
 3. In the Ionic project, add the following script reference to index.html, just before the Ionic Framework reference (before the ionic.bundle.js reference):
 
   ~~~~~~~~~~~~~~~~~~~~~~~
-  "<script src="js/platformOverrides.js"></script>"
+  ##<script src="js/platformOverrides.js"></script>
   ~~~~~~~~~~~~~~~~~~~~~~~
 
 4. Select Windows or Windows Phone (Universal) as a debug target (Solution Platforms list).
