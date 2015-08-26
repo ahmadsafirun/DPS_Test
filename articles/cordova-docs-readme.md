@@ -33,7 +33,7 @@ This repository contains a set of documents and tutorials for the **Visual Studi
 
 <a name="tips"></a>
 ## Tips & Workarounds
-1. [General](tips-and-workarounds-general-readme.md)
+1. [General](./tips-and-workarounds-general-readme.md)
 1. [Android](./tips-and-workarounds/android)
 1. [iOS and OSX](./tips-and-workarounds/ios)
 1. [Performance](./tips-and-workarounds/performance)
