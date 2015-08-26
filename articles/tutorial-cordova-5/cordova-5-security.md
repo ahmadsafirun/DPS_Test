@@ -169,8 +169,8 @@ When you upgrade a project to Cordova 5.0.0+ from Cordova 4.3.1 or below in Visu
 	To reiterate, **CSP support is only available on Android 4.4+ devices or Android 4.0+ when using Crosswalk.** See [Using Apache Cordova 5](./tutorial-cordova-5-readme.md#crosswalk) for information adding Crosswalk to your project.
 
 ## More Information
-* [Read more about Apache Cordova 5](tutorial-cordova-5-readme.md)
-* [Read tutorials and learn about tips, tricks, and known issues](cordova-docs-readme.md)
+* [Read more about Apache Cordova 5](./tutorial-cordova-5-readme.md)
+* [Read tutorials and learn about tips, tricks, and known issues](./cordova-docs-readme.md)
 * [Download samples from our Cordova Samples repository](http://github.com/Microsoft/cordova-samples)
 * [Follow us on Twitter](https://twitter.com/VSCordovaTools)
 * [Visit our site http://aka.ms/cordova](http://aka.ms/cordova)
