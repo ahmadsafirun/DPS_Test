@@ -1,8 +1,9 @@
-﻿<properties pageTitle="Sample article" 
-	description="This is an example article" 
-	services="" 
-	documentationCenter=""
-	authors="bursteg" />
+﻿<properties pageTitle="Nuget Tutorial" 
+  description="This is an article on nuget tutorial" 
+  services="" 
+  documentationCenter=""
+  authors="bursteg" />
+  
 # Using the NuGet package manager with your Cordova projects
 
 [NuGet](https://www.nuget.org/) is the package manager for the Microsoft development platform. It has client tools to produce and consume packages and a gallery where all the packages are hosted. In addition to popular .NET packages, it also hosts many popular JavaSript frameworks that have typically been used in ASP.NET applications. 

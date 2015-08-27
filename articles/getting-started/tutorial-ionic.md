@@ -1,8 +1,9 @@
-﻿<properties pageTitle="Sample article" 
-	description="This is an example article" 
-	services="" 
-	documentationCenter=""
-	authors="bursteg" />
+﻿<properties pageTitle="Ionic Tutorial" 
+  description="This is an article on ionic tutorial" 
+  services="" 
+  documentationCenter=""
+  authors="bursteg" />
+
 #Getting started with Ionic apps in Visual Studio
 [Ionic](http://www.ionicframework.com) is a popular front-end JavaScript framework for developing cross-platform mobile apps using Cordova. You can use Visual Studio 2015 and the Ionic CLI to easily create and debug cross-platform apps
 
@@ -83,7 +84,7 @@ with this line, to prevent a runtime error:
   ```
 5. In some of the Ionic starter app templates, you may also need to remove the TypeScript file, angular-ui-router.d.ts, for the angular-ui-router module, or you may see this error.
 
-![TypeScript error] (media/ionic-ts2304.png)
+![TypeScript error] (media/tutorial-ionic/ionic-ts2304.png)
 
   > **Note** If you are using TypeScript, you need to get updated d.ts files or an updated version of the template to support the routing module.
 
@@ -94,7 +95,7 @@ For Windows & Windows Phone 8.1:
 3. In the Ionic project, add the following script reference to index.html, just before the Ionic Framework reference (before the ionic.bundle.js reference):
 
   ~~~~~~~~~~~~~~~~~~~~~~~
-  <script src="js/platformOverrides.js"></script>
+  "script" src="js/platformOverrides.js" "/script"
   ~~~~~~~~~~~~~~~~~~~~~~~
 
 4. Select Windows or Windows Phone (Universal) as a debug target (Solution Platforms list).
@@ -121,6 +122,6 @@ To target Windows 10 in the app, you need to:
 * In the configuration designer, select Cordova 5.1.1 and, in the Windows tab, choose Windows 10.
 However, if you target Windows 10 in the app, note that you may get errors loading partial pages in Ionic apps, such as this unhandled exception.
 
-![unhandled exception](media/ionic-unhandled-exception.png)
+![unhandled exception](media/tutorial-ionic/ionic-unhandled-exception.png)
 
 If you see this error when targeting Win/WinPhone 8.1, follow the earlier steps to call platformOverrides.js to fix this issue. When targeting Win10, this fix currently requires another update to the compatibility shim or a platform fix.

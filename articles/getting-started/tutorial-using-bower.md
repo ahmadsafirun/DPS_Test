@@ -1,3 +1,9 @@
+<properties pageTitle="Bower Tutorial" 
+  description="This is an article on bower tutorial" 
+  services="" 
+  documentationCenter=""
+  authors="bursteg" />
+
 #Using the Bower package manager in Cordova projects
 While working on your Cordova project, you may want to use a JavaScript or CSS framework built by someone else and available for download from the web. To help with this, you may want to add the [Bower](http://www.bower.io) package manager to your web developer toolbelt. Bower advertises itself as "a package manager for the web" and is a JavaScript utility you can use to search framework packages and download them into a project. These packages are built by an active community of developers and framework authors.
 
@@ -77,15 +83,15 @@ In Visual Studio's Solution Explorer, you'll notice a Dependencies item with a B
 
 You can manage Bower packages within Solution Explorer by right-clicking on the Dependencies\Bower folder, or by right-clicking on packages within that folder. For example, the Restore Packages menu acts the same as the `bower update` command and will download the latest packages.
 
-![Restoring packages from the solution explorer menu](media/bower-solution-explorer-menu.png)
+![Restoring packages from the solution explorer menu](media/tutorial-using-bower/bower-solution-explorer-menu.png)
 
 To add a new package to your project, you'll edit the bower.json file. As you edit this file, the IntelliSense feature in Visual Studio will search the Bower repository for you and suggest packages to install. For example, in the following image IntelliSense is making suggestions as you type, listing any package names that contain the word "angular":
 
-![Visual Studio IntelliSense with suggestions for Bower package names](media/bower-package-intellisense.png)
+![Visual Studio IntelliSense with suggestions for Bower package names](media/tutorial-using-bower/bower-package-intellisense.png)
 
 When entering a version number, IntelliSense also suggests the latest stable version number:
 
-![Visual Studio IntelliSense with suggestions for Bower package version numbers](media/bower-package-version-intellisense.png)
+![Visual Studio IntelliSense with suggestions for Bower package version numbers](media/tutorial-using-bower/bower-package-version-intellisense.png)
 
 ##<a name="useFile"></a>How do I use a file in my Cordova project, after it's installed from Bower?
 By default, any packages downloaded from Bower will be saved to disk in a bower_components folder located next to the bower.json file. In a typical Cordova project, this means you'll have a project folder that looks like the following:
