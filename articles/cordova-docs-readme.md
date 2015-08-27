@@ -33,15 +33,22 @@ This repository contains a set of documents and tutorials for the **Visual Studi
 
 <a name="tips"></a>
 ## Tips & Workarounds
+<<<<<<< HEAD
 1. [General](./tips-and-workarounds/general/tips-and-workarounds-general-readme.md)
 1. [Android](./tips-and-workarounds/android/tips-and-workarounds-android-readme.md)
 1. [iOS and OSX](./tips-and-workarounds/ios/tips-and-workarounds-ios-readme.md)
 1. [Performance](./tips-and-workarounds/performance/tips-and-workarounds-performance-readme.md)
+=======
+1. [General](tips-and-workarounds/general/tips-and-workarounds-general-readme.md)
+1. [Android](./tips-and-workarounds/android)
+1. [iOS and OSX](./tips-and-workarounds/ios)
+1. [Performance](./tips-and-workarounds/performance)
+>>>>>>> ff0e0b23dbd6f50ff65c7fcf1d3ca04889a5079a
 
 
 <a name="knownissues"></a>
 ## Known Issues
-1. [General](./known-issues/known-issues-general.md)
+1. [General](known-issues/known-issues-general.md)
 1. [Debugger](./known-issues/known-issues-debugger.md)
 1. Apache Cordova & Ripple
 	1. [Apache Cordova & Ripple General](./known-issues/known-issues-ripple-cordova.md)
