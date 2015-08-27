@@ -11,18 +11,18 @@ This repository contains a set of documents and tutorials for the **Visual Studi
 
 <a name="tutorials"></a>
 ## Tutorials
-1. [Using Apache Cordova 5](./tutorial-cordova-5)
+1. [Using Apache Cordova 5](tutorial-cordova-5/tutorial-cordova-5-readme.md)
 	1. [An Introduction to Cordova 5 Security](./tutorial-cordova-5/cordova-5-security.md)
-1. [Using Gulp with your Cordova projects](./tutorial-gulp)
+1. [Using Gulp with your Cordova projects](tutorial-gulp/tutorial-gulp-readme.md)
 	1. [Using Gulp to Build Cordova Projects](./tutorial-gulp/gulp-ci.md)
 	1. [Invoking Gulp Tasks During a Cordova Build and the VS Task Runner Explorer](./tutorial-gulp/gulp-task-runner-explorer.md)
 	1. [Compiling TypeScript with Gulp](./tutorial-gulp/gulp-typescript.md)
-1. [Getting Started Building Cordova Apps in a Team / Continuous Integration (CI) Environment](./tutorial-team-build)
+1. [Getting Started Building Cordova Apps in a Team / Continuous Integration (CI) Environment](tutorial-team-build/tutorial-team-build-readme.md)
 	1. [Getting Started with Cordova & TFS 2015 or Visual Studio Online](./tutorial-team-build/tfs2015.md)
 	1. [Getting Started with Cordova & TFS 2013](./tutorial-team-build/tfs2013.md)
 	1. [Getting Started with Cordova & Jenkins CI](./tutorial-team-build/jenkins.md)
 	1. [General CI Guidence, Information, and Troubleshooting](./tutorial-team-build/general.md)
-1. [Package & Publish your Cordova Applications](./tutorial-package-publish)
+1. [Package & Publish your Cordova Applications](tutorial-package-publish/tutorial-package-publish-readme.md)
 1. [Using TypeScript with your Cordova projects](./getting-started/tutorial-typescript.md)
 1. [Using the Bower package manager with your Cordova projects](./getting-started/tutorial-using-bower.md)
 1. [Using the NuGet package manager with your Cordova projects](./getting-started/tutorial-nuget.md)
@@ -33,10 +33,10 @@ This repository contains a set of documents and tutorials for the **Visual Studi
 
 <a name="tips"></a>
 ## Tips & Workarounds
-1. [General](./tips-and-workarounds-general-readme.md)
-1. [Android](./tips-and-workarounds/android)
-1. [iOS and OSX](./tips-and-workarounds/ios)
-1. [Performance](./tips-and-workarounds/performance)
+1. [General](./tips-and-workarounds/general/tips-and-workarounds-general-readme.md)
+1. [Android](./tips-and-workarounds/android/tips-and-workarounds-android-readme.md)
+1. [iOS and OSX](./tips-and-workarounds/ios/tips-and-workarounds-ios-readme.md)
+1. [Performance](./tips-and-workarounds/performance/tips-and-workarounds-performance-readme.md)
 
 
 <a name="knownissues"></a>

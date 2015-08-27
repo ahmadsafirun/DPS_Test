@@ -10,9 +10,9 @@ This repository contains a set tips and workarounds for [Apache Cordova](http://
 **Note that this documentation does not apply to Visual Studio 2013 CTPs.**
 
 ##Categories
-1. [General](./general)
-1. [Android](./android)
-1. [iOS and OSX](./ios)
+1. [General](general/tips-and-workarounds-general-readme.md)
+1. [Android](android/tips-and-workarounds-android-readme.md)
+1. [iOS and OSX](ios/tips-and-workarounds-android-readme.md)
 1. Windows
 1. Windows Phone 8 (Silverlight)
 

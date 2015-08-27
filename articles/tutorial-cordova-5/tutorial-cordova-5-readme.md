@@ -51,7 +51,7 @@ Understanding these differences can be important when reading blog posts or upda
 
 Other components are also versioned independantly, but typically you will not be directly exposed to them. It is the release of Cordova Android 4.0.0 that triggered the major version increase for Cordova as a whole given it had a number of breaking changes. Windows 4.0.0 is also a major release that includes Windows 10 support but was designed to not have breaking changes when building for Windows or Windows Phone 8.1.
 
-Note that you can actually add different platform versions to your project for a given CLI version through the use of some XML elements or command line options for edge case scenarios. See the [May 26th, 2015 Android Cordova Platform Security Issue](../tips-and-workarounds/android/security-05-26-2015) article for a specific example of how this works.
+Note that you can actually add different platform versions to your project for a given CLI version through the use of some XML elements or command line options for edge case scenarios. See the [May 26th, 2015 Android Cordova Platform Security Issue](../tips-and-workarounds/android/security-05-26-2015/tips-and-workarounds-android-security-05-26-2015-readme.md) article for a specific example of how this works.
 
 <a name="security"></a>
 ##Security Model Changes for Android and iOS
@@ -174,7 +174,7 @@ cordova build android -- --ant
 
 There are three major ways that switching to Gradle can affect your project:
 
-1. The way you specify signing information is different. See the [Packaging & Publishing tutorial for details](../tutorial-package-publish).
+1. The way you specify signing information is different. See the [Packaging & Publishing tutorial for details](../tutorial-package-publish/tutorial-package-publish-readme.md).
 1. Some 3rd party plugins may now require Gradle and thus typically only work on Cordova 5.0.0 and up. In particular, plugins that modify Android build artifacts in a non-standard way can run into issues.
 1. Other 3rd party plugins may not have updated to support Gradle yet and still require Ant to be used. Generally these plugins are designed for Cordova versions < 5.0.0.
 

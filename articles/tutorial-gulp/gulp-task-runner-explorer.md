@@ -78,7 +78,7 @@ gulp before-build
 
 However, you may want to be able to simply assign bindings in Visual Studio and have them apply from builds at the command line or in a team / Continuous Integration (CI) environment. Fortunately this is fairly straight forward to do via a [Cordova "hook"](http://go.microsoft.com/fwlink/?LinkID=533744).
 
-To do so, **[follow these directions to add a pre-built Cordova hook to your project](./hook-task-runner-binding)**. You can then modify it as you see fit to meet your needs. 
+To do so, **[follow these directions to add a pre-built Cordova hook to your project](hook-task-runner-binding/tutorial-gulp-hook-task-runner-binding-readme.md)**. You can then modify it as you see fit to meet your needs. 
 
 ## More Information
 * [Learn more about using Gulp with your Cordova projects](tutorial-gulp-readme.md)

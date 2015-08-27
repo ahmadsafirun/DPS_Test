@@ -56,7 +56,7 @@ On the surface, this seems like all files in a given Cordova project should be a
 
 **Troubleshooting Tip:** Adding plugins/android.json, plugins/ios.json, plugins/remote_ios.json, plugins/windows.json, or plugins/wp8.json adding these files to source control can result in a build that **appears to succeed but is missing plugin native code.** They should only be included if the "platforms" folder is also checked in which is not recommended. Simply remove these files from source control to resolve the issue.
 
-Note that you **can** add "plugins/fetch.json" to source control along with the rest of the contents of the plugins folder. See [our Issues, Tips, and Workarounds documentation](../tips-and-workarounds) for additional tips on addressing common build issues. 
+Note that you **can** add "plugins/fetch.json" to source control along with the rest of the contents of the plugins folder. See [our Issues, Tips, and Workarounds documentation](../tips-and-workarounds/tips-and-workarounds-readme.md) for additional tips on addressing common build issues. 
 
 <a name="basic"></a>
 ##Basic Workflow
@@ -435,7 +435,7 @@ There are a few relativley common issues when building a Cordova app on OSX rela
 
    To resolve this problem you have two options:
 	1.  Don't check in the contents of the "platforms" folder into source control. This is by far the path of least resistance. The Gulp build script can add them at the time you build.
-	2.  If you absolutely must check in the contents of the platforms folder from Windows, you can craft a shell script to set the execute bits on these files and include it as a part of your build process. There is also a [**Cordova hook based version of this script**](../tips-and-workarounds/ios/osx-set-execute) available in the tips and workarounds section.
+	2.  If you absolutely must check in the contents of the platforms folder from Windows, you can craft a shell script to set the execute bits on these files and include it as a part of your build process. There is also a [**Cordova hook based version of this script**](../tips-and-workarounds/ios/osx-set-execute/tips-and-workarounds-ios-osx-set-execute-readme.md) available in the tips and workarounds section.
 	    1.  Create a shell script called "set-execute.sh" with the following contents:
 
             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
