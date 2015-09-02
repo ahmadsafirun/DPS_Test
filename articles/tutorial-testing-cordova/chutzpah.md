@@ -11,7 +11,7 @@ Let’s unit test a simple Apache Cordova project by using Chutzpah in Visual St
 
 There are many ways to unit test JavaScript apps. A lot of you use Jasmine, Mocha, or QUnit to test your code. Chutzpah supports each of these frameworks and displays tests in Visual Studio’s Test Explorer.
 
-In this tutorial, you will install Chutzpah, learn how tests are organized, add references to required files through Chutzpah.json, and finally run tests through the Test Explorer. I have provided an example project (Calculator.zip) that goes along with this tutorial. Download the example file here: [Calculator.zip](media/chutzpah/Calculator.zip?raw=true)
+In this tutorial, you will install Chutzpah, learn how tests are organized, add references to required files through Chutzpah.json, and finally run tests through the Test Explorer. I have provided an example project (Calculator.zip) that goes along with this tutorial. Download the example file here: [Calculator.zip](chutzpah_files/Calculator.zip?raw=true)
 
 ----------
 
@@ -110,4 +110,4 @@ Conclusion
 -------------
 In this article, you learned how to set up and use Chutzpah. You first downloaded and installed Chutzpah through “Extensions and Updates.” Next, you opened the references to required files in Chutzpah.json, and then you tried running tests through the Test Explorer. Finally, you modified tests files in Jasmine, Mocha and QUnit, and now you have a starting point for testing out your apps.   
  
-You can download the Calculator_Final project here: [Calculator-Final.zip](media/chutzpah/Calculator-Final.zip?raw=true)
+You can download the Calculator_Final project here: [Calculator-Final.zip](chutzpah_files/Calculator-Final.zip?raw=true)
