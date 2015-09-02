@@ -8,6 +8,33 @@
 This article covers [known issues](../cordova-docs-readme.md#knownissues) related to Visual Studio Tools for Apache Cordova 2015 when building or deploying to iOS devices or simulators. 
 
 ----------
+##**Incremental builds with remotebuild@1.0.1 and Visual Studio 2015 RTM is broken:** 
+Current version of VS 2015 RTM and remotebuild agent version 1.0.1 has a bug where incremental changes made to any files under the /www folder does not get updated/built on iOS.
+
+*Observation:*
+
+1.	First F5 = success
+2.	Make changes to any files inside /www
+3.	Second F5 = changes to /www don’t appear; looks exactly like the first F5
+
+
+***Temporary Workaround A:***
+
+1. Open File Explorer and Navigate to %APPDATA%\npm\node_modules\vs-tac\lib\
+2. Replace file remoteBuild.js with one from [here](https://raw.githubusercontent.com/Microsoft/cordova-docs/master/known-issues/ios-remote-incremental-build-fix/remoteBuild.js)
+
+*Note: if you are not using default npm installation location, then to find out the directory where remoteBuild.js is located, run “npm config get prefix” (from a command prompt) to get the base of the directory, “C:\Users\<user name>\AppData\Roaming\npm” for me, and then replace “\node_modules\vs-tac\lib\remoteBuild.js”.*
+
+
+***Temporary Workaround B:***
+
+1. First F5 = success
+2. User makes changes to /www
+3. **Do a Clean build or Rebuild**
+4. Second F5 = success
+
+
+----------
 **vs-ms-remote reports a 404 error when using VS 2015 RTM or later:** VS 2015 RTM and up uses a new "remotebuild" agent instead of vs-mda-remote. See [remotebuild installation instructions](http://go.microsoft.com/fwlink/?LinkID=533745) for details.
 
 ----------
